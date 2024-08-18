@@ -9,7 +9,7 @@ behavior.
 # Install
 
 ```sh
-docker build -t protobufjs:latest https://github.com/loris-intergalactique/docker-protobufjs.git#main
+docker build -t protobufjs:latest https://github.com/loris-intergalactique/docker-protobufjs.git#master
 ```
 
 # Basic Usage
@@ -38,8 +38,6 @@ The command below processes ./protos non-recursively to search for `*.proto`
 files, and bundles them as a static es6 module into `/gen/pb-js/mymodule.js`.
 
 ```sh
-docker build -t protobufjs:latest https://github.com/loris-intergalactique/docker-protobufjs.git#main
-
 docker run --m -it \
     -v "${PWD}:/defs" \
     -w /defs \
